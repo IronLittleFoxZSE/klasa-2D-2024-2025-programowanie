@@ -5,7 +5,15 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	std::cout << "Hel\tlo World!\n";
+
+	std::cout << "Nazywam sie Lukasz Felisek\n";
+	std::cout << "Nazywam sie Lukasz Felisek\n";
+	std::cout << 'X';
+	std::cout << "\n";
+	std::cout << '\n';
+	std::cout << 257 << "\n";
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
