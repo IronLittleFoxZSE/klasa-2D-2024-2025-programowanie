@@ -10,11 +10,24 @@ void task1()
 	std::cout << "Masz " << ageFromUser << " lat.\n";
 }
 
+//Stwórz program, który pobiera od użytkownika 
+//długość w metrach i przelicza ją na centymetry, 
+//milimetry i  kilometry. Wyświetl wynik.
+void task2()
+{
+	float lengthInMeterFromUser;
+	std::cout << "Podaj długość w metrach\n";
+	std::cin >> lengthInMeterFromUser;
+
+	float lengthInCentimeter;
+	lengthInCentimeter = lengthInMeterFromUser / 100;
+}
 
 
 int main()
 {
-	task1();
+	//task1();
+	task2();
 }
 
 /*
