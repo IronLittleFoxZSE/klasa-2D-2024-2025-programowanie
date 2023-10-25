@@ -5,15 +5,15 @@
 
 int main()
 {
-	std::cout << "Hel\tlo World!\n";
+	std::cout << "Hel\tlo World!\n"; //stała łańcucuchowa od 0 do 4 miliardów znaków
 
+	std::cout << "Nazywam sie Lukasz Felisek\n"; 
 	std::cout << "Nazywam sie Lukasz Felisek\n";
-	std::cout << "Nazywam sie Lukasz Felisek\n";
-	std::cout << 'X';
+	std::cout << 'X'; // stała znakowa - musi być jeden znak
 	std::cout << "\n";
 	std::cout << '\n';
-	std::cout << 257 << "\n";
-
+	std::cout << 257 << "\n"; //stała liczbowa całkowita
+	std::cout << 12.5 << "\n"; //stała liczbowa rzeczywista
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
