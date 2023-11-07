@@ -20,7 +20,16 @@ void task2()
 	std::cin >> lengthInMeterFromUser;
 
 	float lengthInCentimeter;
-	lengthInCentimeter = lengthInMeterFromUser / 100;
+	lengthInCentimeter = lengthInMeterFromUser * 100;
+
+	float lengthInMilimeter = lengthInCentimeter * 10;
+
+	float LengthInKilometer = lengthInMeterFromUser / 1000;
+
+	std::cout << "Metry: " << lengthInMeterFromUser << "\n";
+	std::cout << "Centymetry: " << lengthInCentimeter << "\n";
+	std::cout << "Milimetry: " << lengthInMilimeter << "\n";
+	std::cout << "Kilometry: " << LengthInKilometer << "\n";
 }
 
 
@@ -32,7 +41,8 @@ int main()
 
 /*
 
-Algorytm - zbiór instrukcji realizujący postawione przed nim zadanie.
+Algorytm - skończony zbiór instrukcji realizujący postawione przed nim zadanie.
+Kolejność instrukcji w zbiorze jest określona.
 Sposoby zapisu:
 * w punktach
 * opis słowny
