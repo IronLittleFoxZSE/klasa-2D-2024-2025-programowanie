@@ -34,6 +34,7 @@
 void task1()
 {
 	short ageFromUser;
+
 	std::cout << "Podaj swój wiek.\n";
 	std::cin >> ageFromUser;
 
