@@ -43,7 +43,33 @@ void task1()
     //std::cout << "dfgsdf";
 }
 
+//Napisz program, który wczyta liczbę 
+//i sprawdzi czy jest ona z zakresu <1;10).
+void task2()
+{
+    int number;
+    std::cout << "Podaj liczbę \n";
+    std::cin >> number;
+
+    if (number >= 1)
+    {
+        if (number < 10)
+        {
+            std::cout << "Liczba jest w zakresie\n";
+        }
+        else
+        {
+            std::cout << "Liczba nie jest w zakresie\n";
+        }
+    }
+    else
+    {
+        std::cout << "Liczba nie jest w zakresie\n";
+    }
+
+}
+
 int main()
 {
-    task1();
+    task2();
 }
