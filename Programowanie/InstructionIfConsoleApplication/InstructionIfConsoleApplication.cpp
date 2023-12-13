@@ -1,6 +1,16 @@
 ﻿#include <iostream>
 
 /*
+
+Priorytety operatorów:
+
+* /
++ -
+> < >= <= == !=
+&&
+||
+=
+
 Operatory porównania:
 >   większości
 <   mniejszości
@@ -8,6 +18,20 @@ Operatory porównania:
 <=  mniesze bądź równe
 ==  równe
 !=  różne
+
+Operatory logiczne:
+
+||  or/lub
+&&  and/i
+!   not/nie
+
+
+ A  B   A || B      A && B      !A
+ f  f      f           f         t
+ f  t      t           f         
+ t  f      t           f         f
+ t  t      t           t
+
 
 */
 
@@ -51,6 +75,7 @@ void task2()
     std::cout << "Podaj liczbę \n";
     std::cin >> number;
 
+    //wersja 1
     if (number >= 1)
     {
         if (number < 10)
@@ -67,6 +92,15 @@ void task2()
         std::cout << "Liczba nie jest w zakresie\n";
     }
 
+    //wersja 2
+    if (number >= 1 && number < 10)
+    {
+        std::cout << "Liczba jest w zakresie\n";
+    }
+    else
+    {
+        std::cout << "Liczba nie jest w zakresie\n";
+    }
 }
 
 int main()
