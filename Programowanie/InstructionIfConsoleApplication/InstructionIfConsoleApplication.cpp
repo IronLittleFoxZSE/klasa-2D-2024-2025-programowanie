@@ -2,7 +2,7 @@
 
 /*
 * Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i sprawdzi, czy są one równe. Wyświetl odpowiedni komunikat.
-* Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona parzysta. Wyświetl odpowiedni komunikat.
+* 
 * Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
 
 * Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
@@ -291,10 +291,19 @@ void task9()
 	std::cout << "\n";
 }
 
-//
+//Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona parzysta. Wyświetl odpowiedni komunikat.
 void task10()
 {
+	int number;
+	std::cout << "Podaj licznę\n";
+	std::cin >> number;
 
+	int rest = number % 2;
+
+	if (rest == 0)
+		std::cout << "Liczba jest parzysta\n";
+	else
+		std::cout << "Liczba jest nieparzysta\n";
 }
 
 int main()
