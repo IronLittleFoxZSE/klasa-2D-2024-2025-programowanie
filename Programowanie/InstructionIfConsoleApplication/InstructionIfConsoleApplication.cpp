@@ -2,7 +2,7 @@
 
 /*
 * Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i sprawdzi, czy są one równe. Wyświetl odpowiedni komunikat.
-* 
+*
 * Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
 
 * Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
@@ -306,7 +306,61 @@ void task10()
 		std::cout << "Liczba jest nieparzysta\n";
 }
 
+//Napisz program, który poprosi użytkownika o podanie liczby od 1 do 7 i wyświetli odpowiadający mu dzień tygodnia.
+void task11()
+{
+	int dayNumber;
+	std::cout << "Podaj numer dnia tygodania\n";
+	std::cin >> dayNumber;
+
+	if (dayNumber == 1)
+		std::cout << "Poniedziałek\n";
+	else if (dayNumber == 2)
+		std::cout << "Wtorek\n";
+	else if (dayNumber == 3)
+		std::cout << "Środa\n";
+	else if (dayNumber == 4)
+		std::cout << "Czwartek\n";
+	else if (dayNumber == 5)
+		std::cout << "Piątek\n";
+	else if (dayNumber == 6)
+		std::cout << "Sobota\n";
+	else if (dayNumber == 7 || dayNumber == 0)
+		std::cout << "Niedziela\n";
+	else
+		std::cout << "Nie ma takiego dnia tygodnia\n";
+
+	switch (dayNumber)
+	{
+	case 1:
+		std::cout << "Poniedziałek\n";
+		break;
+	case 2:
+		std::cout << "Wtorek\n";
+		break;
+	case 3:
+		std::cout << "Środa\n";
+		break;
+	case 4:
+		std::cout << "Czwartek\n";
+		break;
+	case 5:
+		std::cout << "Piątek\n";
+		break;
+	case 6:
+		std::cout << "Sobota\n";
+		break;
+	case 0:
+	case 7:
+		std::cout << "Niedziela\n";
+		break;
+	default:
+		std::cout << "Nie ma takiego dnia tygodnia\n";
+		break;
+	}
+}
+
 int main()
 {
-	task9();
+	task11();
 }
