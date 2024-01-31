@@ -360,7 +360,37 @@ void task11()
 	}
 }
 
+//Napisz program, który wczyta od użytkownika liczbę dodatnią
+void task12()
+{
+	int number;
+	std::cout << "Podaj liczbę dodatnią\n";
+	std::cin >> number;
+
+	if (number < 0)
+	{
+		std::cout << "Podaj liczbę dodatnią\n";
+		std::cin >> number;
+		if (number < 0)
+		{
+			std::cout << "Podaj liczbę dodatnią\n";
+			std::cin >> number;
+			if (number < 0)
+			{
+				std::cout << "Podaj liczbę dodatnią\n";
+				std::cin >> number;
+				if (number < 0)
+				{
+					//....
+				}
+			}
+		}
+	}
+
+	std::cout << "Podano liczbę " << number << "\n";
+}
+
 int main()
 {
-	task11();
+	task12();
 }
