@@ -1,6 +1,12 @@
 ﻿// LoopDoWhileConsoleApplication.cpp 
 #include <iostream>
 
+/*
+* Napisz program, który poprosi użytkownika o wprowadzenie dowolnej liczby całkowitej. Następnie program powinien obliczyć i wyświetlić liczbę cyfr.
+* Napisz program, który sprawdza czy więcej jest cyfr parzystych, czy nieparzystych we wczytanej liczbie.
+* Poproś użytkownika o podawanie liczb, aż wprowadzi zero. Oblicz sumę oraz średnią arytmetyczną wprowadzonych liczb.
+*/
+
 //Napisz program, który wczyta od użytkownika liczbę dodatnią
 void task1()
 {
@@ -126,6 +132,7 @@ void task4()
 	} while (number < 0);
 
 	int tmpNumber;
+	int sumOfDigits = 0;
 
 	do
 	{
@@ -140,11 +147,13 @@ void task4()
 		*/
 
 		int rest = number % 10;
-		std::cout << rest << ", ";
+		//std::cout << rest << ", ";
+		sumOfDigits = sumOfDigits + rest;
 
 		number = number / 10;
 
 	} while (number > 0);
+	std::cout << "Suma cyfr wynosi " << sumOfDigits << "\n";
 }
 
 int main()
