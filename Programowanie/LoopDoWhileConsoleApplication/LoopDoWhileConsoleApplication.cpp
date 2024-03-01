@@ -156,6 +156,27 @@ void task4()
 	std::cout << "Suma cyfr wynosi " << sumOfDigits << "\n";
 }
 
+//Napisz program, który poprosi użytkownika o wprowadzenie dowolnej liczby całkowitej.
+//  Następnie program powinien obliczyć i wyświetlić liczbę cyfr.
+void task5()
+{
+	int number;
+	do
+	{
+		std::cout << "Podaj liczbę dodatnią\n";
+		std::cin >> number;
+	} while (number < 0);
+
+	int numberOfDigit = 0;
+	do
+	{
+		number = number / 10;
+		numberOfDigit++;
+	} while (number > 0);
+
+	std::cout << "Ilość cyfr w liczbie to " << numberOfDigit << "\n";
+}
+
 int main()
 {
 	task4();
