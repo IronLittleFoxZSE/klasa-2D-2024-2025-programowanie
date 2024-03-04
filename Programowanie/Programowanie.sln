@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InstructionIfConsoleApplica
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopDoWhileConsoleApplication", "LoopDoWhileConsoleApplication\LoopDoWhileConsoleApplication.vcxproj", "{96694B21-5843-498D-98AE-66D07D8A9998}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopWhileConsoleApplication", "LoopWhileConsoleApplication\LoopWhileConsoleApplication.vcxproj", "{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -55,6 +57,14 @@ Global
 		{96694B21-5843-498D-98AE-66D07D8A9998}.Release|x64.Build.0 = Release|x64
 		{96694B21-5843-498D-98AE-66D07D8A9998}.Release|x86.ActiveCfg = Release|Win32
 		{96694B21-5843-498D-98AE-66D07D8A9998}.Release|x86.Build.0 = Release|Win32
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}.Debug|x64.ActiveCfg = Debug|x64
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}.Debug|x64.Build.0 = Debug|x64
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}.Debug|x86.ActiveCfg = Debug|Win32
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}.Debug|x86.Build.0 = Debug|Win32
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}.Release|x64.ActiveCfg = Release|x64
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}.Release|x64.Build.0 = Release|x64
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}.Release|x86.ActiveCfg = Release|Win32
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +74,7 @@ Global
 		{EB5FDBE9-3001-4F45-B1FA-38A62208030F} = {00604E83-B6E3-4F3C-A918-7AF52839AABC}
 		{2422C97F-C835-44CA-829A-3B5DA43990EA} = {D34814E8-7FB2-4804-9BC3-367A0E8460FE}
 		{96694B21-5843-498D-98AE-66D07D8A9998} = {D34814E8-7FB2-4804-9BC3-367A0E8460FE}
+		{074FCCA0-58DB-4B3E-842A-49EA2A9FB224} = {D34814E8-7FB2-4804-9BC3-367A0E8460FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83F8EF81-3781-492D-8632-2687376FEE0F}
