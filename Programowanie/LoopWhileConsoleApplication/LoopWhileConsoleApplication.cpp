@@ -82,7 +82,19 @@ void task2()
 
 void task3()
 {
+	double cityT = 100000;
+	double cityB = 300000;
 
+	int year = 0;
+
+	while(cityT < cityB)
+	{
+		cityT = cityT * 1.03;
+		cityB = cityB * 1.02;
+		year++;
+	}
+
+	std::cout << "Miasto T przegoni miasto B po " << year << " latach\n";
 }
 
 int main()
