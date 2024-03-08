@@ -87,7 +87,7 @@ void task3()
 
 	int year = 0;
 
-	while(cityT < cityB)
+	while (cityT < cityB)
 	{
 		cityT = cityT * 1.03;
 		cityB = cityB * 1.02;
@@ -97,7 +97,44 @@ void task3()
 	std::cout << "Miasto T przegoni miasto B po " << year << " latach\n";
 }
 
+//Sprawdzanie czy liczba jest palindromem.
+void task4()
+{
+	int number;
+	std::cout << "Podaj liczbę dodatnią\n";
+	std::cin >> number;
+
+	int tmpNumber = number;
+	int reverseNumber = 0;
+	while (tmpNumber > 0)
+	{
+		int rest = tmpNumber % 10;
+		reverseNumber = reverseNumber * 10 + rest;
+		tmpNumber = tmpNumber / 10;
+	}
+
+	if (number == reverseNumber)
+		std::cout << "Liczba jest palindromem\n";
+	else
+		std::cout << "Liczba nie jest palindromem\n";
+}
+
+//Napisz program, który wyświetli "Hello world" tyle razy ile chce użytkownik
+void task5()
+{
+	int number;
+	std::cout << "Podaj liczbę dodatnią\n";
+	std::cin >> number;
+
+	int counter = 0;
+	while (counter != number)
+	{
+		std::cout << "Hello world\n";
+		counter++;
+	}
+}
+
 int main()
 {
-	task2();
+	task5();
 }
