@@ -97,11 +97,29 @@ void task4()
 //Napisz program, który wczyta łańcuch znaków i policzy ile jest małych liter 'a'.
 void task5()
 {
+	std::string textFromUser = "dfsdfg";
+	std::cout << "Podaj tekst\n";
+	std::cin >> textFromUser;
 
+	std::cout << "Podany tekst: " << textFromUser << "\n";
+	std::cout << "Pierwszy znak w tekście: " << textFromUser[0] << "\n";
+	std::cout << "Drugi znak w tekście: " << textFromUser[1] << "\n";
+	int length = textFromUser.length();
+	std::cout << "Długość łańcucha znaków: " << length << "\n";
+	std::cout << "Ostatni znak w tekście: " << textFromUser[length - 1] << "\n";
+
+	int counter = 0;
+	for (int i = 0; i < length; i++)
+	{
+		if (textFromUser[i] == 'a')
+			counter++;
+	}
+
+	std::cout << "Małych liter 'a' jest: " << counter << "\n";
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task4();
+	task5();
 }
