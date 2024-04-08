@@ -134,12 +134,66 @@ void task6()
 // i wyświetla liczbę samogłosek i spółgłosek w tym ciągu.
 void task7()
 {
+	std::string textFromUser;
+	std::cout << "Podaj tekst\n";
+	std::cin >> textFromUser;
+
 
 }
 
+//Poproś użytkownika o wprowadzenie liczby całkowitej w systemie dziesiętnym. 
+// Następnie skonwertuj tę liczbę na system dwójkowy (binarny) i wyświetl wynik.
+void task8()
+{
+	int number = 14 + 7;
+	std::cout << "Podaj liczbę:\n";
+	std::cin >> number;
+
+	int tmpNumber = number;
+	std::string binNumber = "";
+
+	do
+	{
+		int rest = tmpNumber % 2;
+		tmpNumber = tmpNumber / 2;
+		if (rest == 0)
+			binNumber = "0" + binNumber;
+		else
+			binNumber = "1" + binNumber;
+
+	} while (tmpNumber != 0);
+
+	std::cout << "Liczba " << number << " binarnie to " << binNumber << "\n";
+}
+
+//Program sprawdzający czy podany ciąg znaków jest palindromem 
+// (czyli takim, który czytany od tyłu jest taki sam, jak czytany od przodu, np. "kajak")
+
+void task9()
+{
+	std::string textFromUser;
+	std::cout << "Podaj tekst\n";
+	std::cin >> textFromUser;
+
+	bool isPalindrome = true;
+
+	//sprawdzenie przeciwieństwa
+	for (int fromStart = 0, fromEnd = textFromUser.length() - 1; fromStart < fromEnd ; fromStart++, fromEnd--)
+	{
+		if (textFromUser[fromStart] != textFromUser[fromEnd])
+		{
+			isPalindrome = false;
+			break;
+		}
+	}
+
+	if (isPalindrome == true)
+		std::cout << "Ten wyraz jest palindromem\n";
+	else
+		std::cout << "Ten wyraz nie jest palindromem\n";
+}
+
 /*
-* Poproś użytkownika o wprowadzenie liczby całkowitej w systemie dziesiętnym. Następnie skonwertuj tę liczbę na system dwójkowy (binarny) i wyświetl wynik.
-* Program sprawdzający czy podany ciąg znaków jest palindromem (czyli takim, który czytany od tyłu jest taki sam, jak czytany od przodu, np. "kajak")
 * Program sprawdzający czy podane dwa słowa są anagramami (czyli takimi, które zawierają te same litery, ale w innym układzie, np. "klasa" i "salka")
 * Program wyciągający informacje z numeru PESEL
 * Program implementujący algorytm szyfrowania Cezara (proste szyfrowanie, w którym każdy znak w tekście jest zastępowany innym znakiem, przesuniętym o stałą liczbę pozycji w alfabecie).*/
@@ -147,5 +201,5 @@ void task7()
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
-	task5();
+	task8();
 }
