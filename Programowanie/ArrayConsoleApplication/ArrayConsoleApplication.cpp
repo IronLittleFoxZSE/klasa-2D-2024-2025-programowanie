@@ -64,8 +64,67 @@ void task2()
 	std::cout << "Średnia to: " << avg << "\n";
 }
 
+//Napisz program, który uzupełni tablicę liczbami losowymi
+// a następnie znajdzie minimum oraz maksimum.
+void task3()
+{
+	const unsigned int ARRAY_NUMBERS_SIZE = 10;
+	int numbers[ARRAY_NUMBERS_SIZE];
+
+	srand(time(NULL));
+	std::cout << "Liczby w kolekcji:\n";
+	for (int i = 0; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		numbers[i] = rand() % 11 - 2000;
+		std::cout << numbers[i] << ", ";
+	}
+	std::cout << "\n\n";
+
+	int max = numbers[0];
+	for (int i = 1; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		if (numbers[i] > max)
+			max = numbers[i];
+	}
+	std::cout << "Największa liczba to " << max << "\n";
+
+	int min = numbers[0];
+	for (int i = 1; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		if (numbers[i] < min)
+			min = numbers[i];
+	}
+	std::cout << "Najmniejsza liczba to " << min << "\n";
+}
+
+//Napisz program, który wczyta numer dnia tygodania 
+// a następnie wyświetli nazwę tego dnia lub komunikat błedu.
+void task4()
+{
+	int dayNumberFromUser;
+	std::cout << "Podaj numer dnia tygodnia:\n";
+	std::cin >> dayNumberFromUser;
+
+	std::string nameOfDayInWeek[7] = {"Poniedziałek", "Wtorek", dokończyć};
+	nameOfDayInWeek[0] = "Poniedziałek";
+	nameOfDayInWeek[1] = "Wtorek";
+	nameOfDayInWeek[2] = "Środa";
+	nameOfDayInWeek[3] = "Czwartek";
+	nameOfDayInWeek[4] = "Piątek";
+	nameOfDayInWeek[5] = "Sobota";
+	nameOfDayInWeek[6] = "Niedziela";
+
+	if (dayNumberFromUser >= 0 && dayNumberFromUser <= 6)
+	{
+		std::cout << "Nazwa dnia to " << nameOfDayInWeek[dayNumberFromUser] << "\n";
+	}
+	else
+	{
+		std::cout << "Nie ma takiego dnia\n";
+	}
+}
 
 int main()
 {
-	task2();
+	task4();
 }
