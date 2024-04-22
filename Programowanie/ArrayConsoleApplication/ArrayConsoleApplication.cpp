@@ -75,7 +75,7 @@ void task3()
 	std::cout << "Liczby w kolekcji:\n";
 	for (int i = 0; i < ARRAY_NUMBERS_SIZE; i++)
 	{
-		numbers[i] = rand() % 11 - 2000;
+		numbers[i] = rand() % 100;
 		std::cout << numbers[i] << ", ";
 	}
 	std::cout << "\n\n";
@@ -105,7 +105,7 @@ void task4()
 	std::cout << "Podaj numer dnia tygodnia:\n";
 	std::cin >> dayNumberFromUser;
 
-	std::string nameOfDayInWeek[7] = {"Poniedziałek", "Wtorek", dokończyć};
+	std::string nameOfDayInWeek[7] = {"Poniedziałek", "Wtorek"};
 	nameOfDayInWeek[0] = "Poniedziałek";
 	nameOfDayInWeek[1] = "Wtorek";
 	nameOfDayInWeek[2] = "Środa";
@@ -124,7 +124,45 @@ void task4()
 	}
 }
 
+// Napisz program, który posortuje tablicę liczb sposobem przez wybór.
+void task5()
+{
+	const unsigned int ARRAY_NUMBERS_SIZE = 10;
+	int numbers[ARRAY_NUMBERS_SIZE];
+
+	srand(time(NULL));
+	std::cout << "Liczby w kolekcji:\n";
+	for (int i = 0; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		numbers[i] = rand() % 100;
+		std::cout << numbers[i] << ", ";
+	}
+	std::cout << "\n\n";
+
+	//algorytm sortujący
+	for (int i = 0; i <= ARRAY_NUMBERS_SIZE - 2; i++)
+	{
+		int minIndex = i;
+		for (int j = i + 1; j < ARRAY_NUMBERS_SIZE; j++)
+		{
+			if (numbers[j] < numbers[minIndex])
+				minIndex = j;
+		}
+		int tmp = numbers[i];
+		numbers[i] = numbers[minIndex];
+		numbers[minIndex] = tmp;
+	}
+
+	std::cout << "Po posortowaniu:\n";
+	for (int i = 0; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		std::cout << numbers[i] << ", ";
+	}
+	std::cout << "\n\n";
+}
+
+
 int main()
 {
-	task4();
+	task5();
 }
