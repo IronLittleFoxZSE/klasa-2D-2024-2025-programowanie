@@ -161,8 +161,45 @@ void task5()
 	std::cout << "\n\n";
 }
 
+// Napisz program, który posortuje tablicę liczb metodą bąbelkową.
+void task6()
+{
+	const unsigned int ARRAY_NUMBERS_SIZE = 10;
+	int numbers[ARRAY_NUMBERS_SIZE];
+
+	srand(time(NULL));
+	std::cout << "Liczby w kolekcji:\n";
+	for (int i = 0; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		numbers[i] = rand() % 100;
+		std::cout << numbers[i] << ", ";
+	}
+	std::cout << "\n\n";
+
+	//algorytm sortujący
+	for (int i = 0; i < ARRAY_NUMBERS_SIZE - 1; i++)
+	{
+		for (int j = 0; j < ARRAY_NUMBERS_SIZE - 1; j++)
+		{
+			if (numbers[j] > numbers[j + 1])
+			{
+				int tmp = numbers[j];
+				numbers[j] = numbers[j + 1];
+				numbers[j + 1] = tmp;
+			}
+		}
+	}
+
+	std::cout << "Po posortowaniu:\n";
+	for (int i = 0; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		std::cout << numbers[i] << ", ";
+	}
+	std::cout << "\n\n";
+}
+
 
 int main()
 {
-	task5();
+	task6();
 }
