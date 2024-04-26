@@ -105,7 +105,7 @@ void task4()
 	std::cout << "Podaj numer dnia tygodnia:\n";
 	std::cin >> dayNumberFromUser;
 
-	std::string nameOfDayInWeek[7] = {"Poniedziałek", "Wtorek"};
+	std::string nameOfDayInWeek[7] = { "Poniedziałek", "Wtorek" };
 	nameOfDayInWeek[0] = "Poniedziałek";
 	nameOfDayInWeek[1] = "Wtorek";
 	nameOfDayInWeek[2] = "Środa";
@@ -198,8 +198,35 @@ void task6()
 	std::cout << "\n\n";
 }
 
+//Napisz program, który wyznaczy wszystkie liczby pierwsze od 2 do zadeklarowanego zakresu.
+//Metoda sito Eratostenesa.
+void task7()
+{
+	const int ARRAY_NUMBERS_SIZE = 50;
+	bool sieve[ARRAY_NUMBERS_SIZE];
+	for (int i = 2; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		sieve[i] = true;
+	}
+
+	for (int i = 2; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		if (sieve[i]/* == true*/)
+		{
+			for (int j = i + i; j < ARRAY_NUMBERS_SIZE; j = j + i)
+				sieve[j] = false;
+		}
+	}
+	
+	std::cout << "Liczby pierwsze:\n";
+	for (int i = 2; i < ARRAY_NUMBERS_SIZE; i++)
+	{
+		if (sieve[i]/* == true*/)
+			std::cout << i << ",";
+	}
+}
 
 int main()
 {
-	task6();
+	task7();
 }
