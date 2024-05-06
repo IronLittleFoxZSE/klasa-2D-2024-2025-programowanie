@@ -228,5 +228,6 @@ void task7()
 
 int main()
 {
-	task7();
+	task1();
+	task2();
 }

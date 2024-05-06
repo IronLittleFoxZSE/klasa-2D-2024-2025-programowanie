@@ -1,13 +1,21 @@
 ﻿// FirstConsoleApplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+/*
+DRY - don't repeat yourself - nie powtarzaj się
+KISS - kept in simple, stupid - trzymaj prostotę, głupcze
+YAGNI - you aren't gonna need it - nie potrzebujesz tego
+SOLID
+	S - single responsibility - pojedyńcza odpowiedzialność
+*/
+
 #include <iostream>
 
 int main()
 {
 	std::cout << "Hel\tlo World!\n"; //stała łańcucuchowa od 0 do 4 miliardów znaków
 
-	std::cout << "Nazywam sie Lukasz Felisek\n"; 
+	std::cout << "Nazywam sie Lukasz Felisek\n";
 	std::cout << "Nazywam sie Lukasz Felisek\n";
 	std::cout << 'X'; // stała znakowa - musi być jeden znak
 	std::cout << "\n";
