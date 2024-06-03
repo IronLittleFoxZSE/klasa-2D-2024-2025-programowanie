@@ -70,6 +70,28 @@ int sum(int firstnumber, int secondNumber)
 	return r;
 }
 
+unsigned long long strong(int n)
+{
+	unsigned long long s = 1;
+	for (int i = 1; i <= n; i++)
+	{
+		s = s * i;
+	}
+	return s;
+}
+
+unsigned long long strongV2(int n)
+{
+	unsigned long long s = 1;
+
+	if (n <= 1)
+		s = 1;
+	else
+		s = n * strongV2(n - 1);
+
+	return s;
+}
+
 int main()
 {
 	/*
@@ -90,7 +112,7 @@ int main()
 	*/
 	
 	//parameterTest(89); //przez referencję nie mogę przekazać stałej
-	int variable = 5;
+	/*int variable = 5;
 	std::cout << "Wartość zmiennej przed funkcją " << variable << "\n";
 	parameterTest(variable);
 	std::cout << "Wartość zmiennej po wywołaniu funkcji " << variable << "\n";
@@ -101,5 +123,7 @@ int main()
 
 	result = sum(15, 7) + 2;
 	std::cout << "Wynik sumowania to " << result << "\n";
+	*/
+	std::cout << "Silnia liczby 10 to " << strongV2(10) << "\n";
 
 }
