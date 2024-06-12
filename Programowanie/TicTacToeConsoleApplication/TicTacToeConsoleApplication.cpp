@@ -31,11 +31,17 @@ int main()
 
 		drawBoard(BOARD_SIZE, board);
 
-		//sprawdzenie czy wygrana
-			//koniec gry
+		if (isWin(BOARD_SIZE, board, playersSymbols[currentPlayerNumber]) == true)
+		{
+			std::cout << "Wygrana!!!\n";
+			break;
+		}
 
-		//sprawdzenie remisu
-			//koniec gry
+		if (isDraw(BOARD_SIZE, board))
+		{
+			std::cout << "Remis!!!\n";
+			break;
+		}
 
 		//zmiana aktualnego gracza na nastêpnege
 		currentPlayerNumber = (currentPlayerNumber + 1) % PLAYERS_COUNT;
