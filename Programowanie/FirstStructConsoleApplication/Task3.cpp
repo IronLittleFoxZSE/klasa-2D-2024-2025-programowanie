@@ -22,10 +22,21 @@ void depositToAccount(bankAccount &account, double amount)
 	account.balance = account.balance + amount;
 }
 
-void widthdrawalFromAccount(bankAccount& account, double amount)
+bool widthdrawalFromAccount(bankAccount& account, double amount)
 {
 	amount = abs(amount);
-	account.balance = account.balance - amount;
+	if (account.balance - amount >= 0)
+	{
+		account.balance = account.balance - amount;
+		return true;
+	}
+	return false;
+}
+
+void transferBetweenAcounts(bankAccount &sourceAccount, bankAccount &targetAccount, double amount)
+{
+	if (widthdrawalFromAccount(sourceAccount, amount) == true)
+		depositToAccount(targetAccount, amount);
 }
 
 void task3()
@@ -50,4 +61,7 @@ void task3()
 	widthdrawalFromAccount(firstAccount, 14.50);
 	accountInformation(firstAccount);
 
+	transferBetweenAcounts(secondAccount, firstAccount, 1000);
+	accountInformation(firstAccount);
+	accountInformation(secondAccount);
 }
