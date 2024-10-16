@@ -32,8 +32,30 @@ void task1()
 		std::cout << "B³¹d otwarcia pliku\n";
 }
 
+//odczyt danych z pliku
+void task2()
+{
+	std::string name;
+	int age;
+	std::ifstream readFromFile;
+	readFromFile.open("c:\\dane.txt");
+	if (readFromFile.is_open())
+	{
+		while (readFromFile.eof() == false)
+		{
+			readFromFile >> name;
+			readFromFile >> age;
+
+			std::cout << "Imie: " << name << " wiek: " << age << "\n";
+		}
+
+		readFromFile.close();
+	}
+	//readFromFile.eof();
+}
+
 
 int main()
 {
-	task1();
+	task2();
 }
