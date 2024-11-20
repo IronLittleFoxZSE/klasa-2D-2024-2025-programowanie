@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReadAndWriteOnFilesConsoleA
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringConsoleApplication", "StringConsoleApplication\StringConsoleApplication.vcxproj", "{D0A9B764-F8C7-45ED-B26B-09B7226795D9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InheritanceConsoleApplication", "InheritanceConsoleApplication\InheritanceConsoleApplication.vcxproj", "{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -169,6 +171,14 @@ Global
 		{D0A9B764-F8C7-45ED-B26B-09B7226795D9}.Release|x64.Build.0 = Release|x64
 		{D0A9B764-F8C7-45ED-B26B-09B7226795D9}.Release|x86.ActiveCfg = Release|Win32
 		{D0A9B764-F8C7-45ED-B26B-09B7226795D9}.Release|x86.Build.0 = Release|Win32
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}.Debug|x64.ActiveCfg = Debug|x64
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}.Debug|x64.Build.0 = Debug|x64
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}.Debug|x86.ActiveCfg = Debug|Win32
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}.Debug|x86.Build.0 = Debug|Win32
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}.Release|x64.ActiveCfg = Release|x64
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}.Release|x64.Build.0 = Release|x64
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}.Release|x86.ActiveCfg = Release|Win32
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,6 +205,7 @@ Global
 		{3E9E7194-AAE9-4583-8151-990681830A47} = {1AE8B3D0-68E2-4E7C-9633-2016D9A4EEAA}
 		{8476827E-2F22-43F0-B454-23B78288629F} = {1AE8B3D0-68E2-4E7C-9633-2016D9A4EEAA}
 		{D0A9B764-F8C7-45ED-B26B-09B7226795D9} = {1AE8B3D0-68E2-4E7C-9633-2016D9A4EEAA}
+		{137DE23C-E7E7-4DA4-BFDF-30D845BB5093} = {1AE8B3D0-68E2-4E7C-9633-2016D9A4EEAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83F8EF81-3781-492D-8632-2687376FEE0F}

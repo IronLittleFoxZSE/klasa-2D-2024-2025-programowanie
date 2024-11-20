@@ -3,7 +3,7 @@
 
 class BankAccount
 {
-private:
+protected:
 	double balance; // saldo
 	std::string owner; //w³aœciciel
 	std::string currency; //waluta

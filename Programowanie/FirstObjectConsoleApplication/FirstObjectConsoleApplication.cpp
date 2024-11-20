@@ -13,7 +13,7 @@ int main()
 	firstAccount.AccountInformation();
 	//accountInformation(firstAccount);
 
-	BankAccount secondAccount;
+	BankAccount secondAccount(15000, "Ewa Nowak", "z³");
 	//secondAccount.SetBalance(15000);
 	//secondAccount.balance = 15000;
 	//secondAccount.currency = "z³";
