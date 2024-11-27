@@ -23,14 +23,10 @@ public:
 	{
 		balance = balance + balance * interestRate;
 	}
-};
 
-class X : SavingBankAccount
-{
-
-public:
-	X()
+	void AccountInformation()
 	{
-
+		BankAccount::AccountInformation();
+		std::cout << "Oprocentowanie: " << interestRate << "\n";
 	}
 };
