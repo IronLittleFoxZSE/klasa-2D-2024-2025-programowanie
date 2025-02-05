@@ -30,7 +30,7 @@ public:
 		std::cout << "Pole = " << GetArea() << "\n";
 	}
 
-	double GetArea() //Rozwi¹zanie tego problemu na innych zajêcich
+	virtual double GetArea() //Rozwi¹zanie tego problemu na innych zajêcich
 	{
 		return -1;
 	}
