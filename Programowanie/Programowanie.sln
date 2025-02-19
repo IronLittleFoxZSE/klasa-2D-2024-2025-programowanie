@@ -57,6 +57,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Wska≈∫niki", "02. Wska≈
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointersConsoleApplication", "PointersConsoleApplication\PointersConsoleApplication.vcxproj", "{F50B13DB-EFB1-4B9A-A60B-BD3522B7BC58}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTacToeObjectConsoleApplication", "TicTacToeObjectConsoleApplication\TicTacToeObjectConsoleApplication.vcxproj", "{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +203,14 @@ Global
 		{F50B13DB-EFB1-4B9A-A60B-BD3522B7BC58}.Release|x64.Build.0 = Release|x64
 		{F50B13DB-EFB1-4B9A-A60B-BD3522B7BC58}.Release|x86.ActiveCfg = Release|Win32
 		{F50B13DB-EFB1-4B9A-A60B-BD3522B7BC58}.Release|x86.Build.0 = Release|Win32
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}.Debug|x64.ActiveCfg = Debug|x64
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}.Debug|x64.Build.0 = Debug|x64
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}.Debug|x86.ActiveCfg = Debug|Win32
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}.Debug|x86.Build.0 = Debug|Win32
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}.Release|x64.ActiveCfg = Release|x64
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}.Release|x64.Build.0 = Release|x64
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}.Release|x86.ActiveCfg = Release|Win32
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -231,6 +241,7 @@ Global
 		{020BEB12-0D38-4C47-BD93-A62412CACE8C} = {1AE8B3D0-68E2-4E7C-9633-2016D9A4EEAA}
 		{5B688C2E-E7A4-44D1-9548-E89D14E4F062} = {78F9235B-4FC3-4807-AF4D-5D9D71633D58}
 		{F50B13DB-EFB1-4B9A-A60B-BD3522B7BC58} = {5B688C2E-E7A4-44D1-9548-E89D14E4F062}
+		{032CD4E2-CDD9-4EF6-8023-E2BABA02C6F5} = {78F9235B-4FC3-4807-AF4D-5D9D71633D58}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83F8EF81-3781-492D-8632-2687376FEE0F}
