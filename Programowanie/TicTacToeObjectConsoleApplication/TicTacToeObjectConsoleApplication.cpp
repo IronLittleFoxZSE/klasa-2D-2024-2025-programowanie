@@ -1,15 +1,17 @@
 #include <iostream>
-#include "Player.h"
+#include "HumanPlayer.h"
 #include "TicTacToeBoard.h"
+#include "EasyBoot.h"
+#include "Player.h"
 
 int main()
 {
 	//inicjowanie gry
-	unsigned int playersCount = 2;
+	unsigned int playersCount = 3;
 	unsigned int currentPlayerNumber = 0;
-	Player** players = new Player * [playersCount];
-	players[0] = new Player('O');
-	players[1] = new Player('X');
+	Player ** players = new Player* [playersCount];
+	players[0] = new EasyBoot('O');
+	players[1] = new HumanPlayer('X');
 
 	int fieldNumber;
 

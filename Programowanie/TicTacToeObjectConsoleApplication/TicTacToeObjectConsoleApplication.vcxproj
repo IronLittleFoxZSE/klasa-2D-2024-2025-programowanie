@@ -127,13 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TicTacToeBoard.cpp" />
+    <ClCompile Include="EasyBoot.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="TicTacToeBoard.cpp" />
+    <ClCompile Include="HumanPlayer.cpp" />
     <ClCompile Include="TicTacToeObjectConsoleApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TicTacToeBoard.h" />
+    <ClInclude Include="EasyBoot.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="TicTacToeBoard.h" />
+    <ClInclude Include="HumanPlayer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
