@@ -29,10 +29,21 @@ int main()
 		numbers.push_back(n);
 	}
 
-
+	/*
 	std::cout << "Odczytane liczby:\n";
 	for (int i = 0; i < numbers.size(); i++)
 	{
 		std::cout << numbers[i] << ", ";
 	}
+	std::cout << "\n";
+	*/
+
+	std::cout << "Odczytane liczby:\n";
+	for (int num:numbers)
+	{
+		std::cout << num << ", ";
+	}
+	std::cout << "\n";
+
+
 }
