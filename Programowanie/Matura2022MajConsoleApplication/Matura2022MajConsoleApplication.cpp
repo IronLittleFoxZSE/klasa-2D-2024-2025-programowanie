@@ -45,5 +45,24 @@ int main()
 	}
 	std::cout << "\n";
 
+	std::cout << "Zadanie 4.1:\n";
+	int counter = 0;
+	for (int num : numbers)
+	{
+		int firstDigit;
+		int lastDigit = num % 10;
 
+		int tmpNum = num;
+		do
+		{
+			firstDigit = tmpNum % 10;
+			tmpNum = tmpNum / 10;
+		} while (tmpNum != 0);
+
+		if (firstDigit == lastDigit)
+		{
+			counter++;
+		}
+	}
+	std::cout << counter << "\n";
 }
