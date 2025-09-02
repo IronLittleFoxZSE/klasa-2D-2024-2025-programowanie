@@ -1,4 +1,4 @@
-# klasa-3D-2024-2025-programowanie
+# klasa-3D-2025-2026-programowanie
 
 
 Kartkówka
